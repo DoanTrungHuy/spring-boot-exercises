@@ -1,0 +1,9 @@
+server:
+  port: 8088
+
+openapi:
+  service:
+    api-docs: api-service
+    title: ${API_TITLE:DUMMY}
+    version: 1.0.0
+    server: http://localhost:${server.port}
