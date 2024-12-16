@@ -13,11 +13,12 @@ spring:
       hibernate:
         format_sql: true
 
-jwt:
-  secretKey: utx@123
-
+# application-prod.yml
 springdoc:
   api-docs:
     enabled: false
   swagger-ui:
     enabled: false
+
+jwt:
+  secretKey: bvffjk@123
