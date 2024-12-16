@@ -1,4 +1,4 @@
-package vn.huy.java.backend_service.config;
+package vn.huy.restful_api.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -15,14 +15,16 @@ import org.springframework.context.annotation.Profile;
 
 import java.util.List;
 
+
 @Configuration
 @Profile({"dev", "test"})
 public class OpenApiConfig {
+
     @Bean
     public GroupedOpenApi publicApi(@Value("${openapi.service.api-docs}") String apiDocs) {
         return GroupedOpenApi.builder()
-                .group(apiDocs)
-                .packagesToScan("vn.huy.java.backend_service.controller")
+                .group(apiDocs) // /v3/api-docs/backend-service
+                .packagesToScan("vn.huy.restful_api.controller")
                 .build();
     }
 

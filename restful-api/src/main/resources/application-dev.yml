@@ -2,18 +2,10 @@ spring:
   config:
     activate:
       on-profile: dev
-  datasource:
-    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/postgres}
-    username: ${POSTGRES_USER:postgres}
-    password: ${POSTGRES_PASSWORD:password}
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: false
-    hibernate:
-      ddl-auto: none
+  devtools:
+    add-properties: true
 
+# application-dev.yml
 springdoc:
   api-docs:
     enabled: true
@@ -21,8 +13,10 @@ springdoc:
     enabled: true
 openapi:
   service:
-    api-docs: api-service
-    serverUrl: http://localhost:${server.port}
-    serverName: Server Dev
-    title: API Document
+    api-docs: backend-service
+    server: http://localhost:${server.port}
+    title: Backend service
     version: 1.0.0
+
+jwt:
+  secretKey: abc@123
