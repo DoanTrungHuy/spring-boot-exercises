@@ -12,8 +12,8 @@ public interface UserService {
     UserResponse findById(Long id);
     UserResponse findByUsername(String username);
     UserResponse findByEmail(String email);
-    int save(UserCreationRequest req);
+    long save(UserCreationRequest req);
     void update(UserUpdateRequest req);
-    int delete(Long id);
+    void delete(Long id);
     void changePassword(UserPasswordRequest req);
 }

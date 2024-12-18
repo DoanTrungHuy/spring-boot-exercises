@@ -45,8 +45,6 @@ services:
 networks:
   default:
     name: backend-service
-    driver: bridge
 
 volumes:
   mysql_data:
-  postgres:

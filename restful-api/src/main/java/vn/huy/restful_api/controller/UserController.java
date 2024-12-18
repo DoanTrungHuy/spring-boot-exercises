@@ -3,6 +3,8 @@ package vn.huy.restful_api.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Min;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,13 +12,19 @@ import vn.huy.restful_api.controller.request.UserCreationRequest;
 import vn.huy.restful_api.controller.request.UserPasswordRequest;
 import vn.huy.restful_api.controller.request.UserUpdateRequest;
 import vn.huy.restful_api.controller.response.UserResponse;
+import vn.huy.restful_api.service.UserService;
+import vn.huy.restful_api.service.impl.UserServiceImpl;
 
 import java.util.*;
 
 @RestController
 @RequestMapping("/user")
+@RequiredArgsConstructor
 @Tag(name = "User Controller")
 public class UserController {
+    @Autowired
+    private UserService userService;
+
     @Operation(summary = "Get user list", description = "API retrieve user from DB")
     @GetMapping("/list")
     public Map<String, Object> getAllUsers(@RequestParam(required = false) String keyword,
@@ -83,19 +91,19 @@ public class UserController {
 
     @Operation(summary = "Create User", description = "API add new user to DB")
     @PostMapping("/add")
-    public ResponseEntity<Long> createUser(UserCreationRequest request) {
-//        Map<String, Object> result = new LinkedHashMap<>();
-//
-//        result.put("status", HttpStatus.CREATED.value());
-//        result.put("message", "User created successfully");
-//        result.put("data", 3);
+    public ResponseEntity<Long> createUser(@RequestBody UserCreationRequest request) {
+        Map<String, Object> result = new LinkedHashMap<>();
+
+        result.put("status", HttpStatus.CREATED.value());
+        result.put("message", "User created successfully");
+        result.put("data", userService.save(request));
 
         return new ResponseEntity<>(1L, HttpStatus.CREATED);
     }
 
     @Operation(summary = "Update User", description = "API update user to DB")
     @PutMapping("/upd")
-    public Map<String, Object> updateUser(UserUpdateRequest request) {
+    public Map<String, Object> updateUser(@RequestBody UserUpdateRequest request) {
         Map<String, Object> result = new LinkedHashMap<>();
 
         result.put("status", HttpStatus.ACCEPTED.value());
@@ -107,7 +115,7 @@ public class UserController {
 
     @Operation(summary = "Change Password", description = "API change password for user to DB")
     @PatchMapping("/change-pwd")
-    public Map<String, Object> changePassword(UserPasswordRequest request) {
+    public Map<String, Object> changePassword(@RequestBody UserPasswordRequest request) {
         Map<String, Object> result = new LinkedHashMap<>();
 
         result.put("status", HttpStatus.NO_CONTENT.value());

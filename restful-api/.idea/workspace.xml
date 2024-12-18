@@ -4,22 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1d8a75-7f52-4ade-ac3f-5c2a38164541" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/MockupUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/AddressRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+    <list default="true" id="2e1d8a75-7f52-4ade-ac3f-5c2a38164541" name="Changes" comment="OK">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/RestfulApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/common/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/common/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/model/AddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/RestfulApiApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/common/UserStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/common/UserType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/config/OpenApiConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/MockupUserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/request/AddressRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/request/UserCreationRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/request/UserPasswordRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/request/UserUpdateRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/controller/response/UserResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/model/AddressEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/model/UserEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/repository/AddressRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/vn/huy/restful_api/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/MockupUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/MockupUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/AddressRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/AddressRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/UserCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/UserCreationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/model/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/UserPasswordRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/UserPasswordRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/request/UserUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/controller/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/model/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/huy/restful_api/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,59 +67,84 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DoanTrungHuy"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DoanTrungHuy&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DoanTrungHuy/spring-boot-exercises.git",
-    "accountId": "086d805e-56c6-4067-90f5-f14328e39c9e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DoanTrungHuy/spring-boot-exercises.git&quot;,
+    &quot;accountId&quot;: &quot;086d805e-56c6-4067-90f5-f14328e39c9e&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
+    <option name="enabledProfiles">
+      <list>
+        <option value="dev" />
+      </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2qIetOVnmK31ygkuf0lrWHvpEQd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "restful-api",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;restful-api&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/spring-boot-exercises/restful-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="vn.huy.restful_api.controller" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RestfulApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.huy.restful_api.RestfulApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -100,10 +163,40 @@
       <option name="presentableId" value="Default" />
       <updated>1734354734043</updated>
       <workItem from="1734354737266" duration="4188000" />
+      <workItem from="1734444197477" duration="1571000" />
+      <workItem from="1734445897434" duration="525000" />
+      <workItem from="1734447031597" duration="786000" />
+      <workItem from="1734447869766" duration="42000" />
+      <workItem from="1734448200807" duration="383000" />
+      <workItem from="1734451088699" duration="4319000" />
+      <workItem from="1734455456234" duration="3037000" />
+      <workItem from="1734466497414" duration="35000" />
+      <workItem from="1734466739265" duration="1295000" />
+      <workItem from="1734468781562" duration="929000" />
+      <workItem from="1734469924069" duration="4212000" />
+      <workItem from="1734497204948" duration="300000" />
+      <workItem from="1734501221675" duration="195000" />
+      <workItem from="1734501440142" duration="551000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="OK" />
   </component>
 </project>
