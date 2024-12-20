@@ -2,7 +2,9 @@ package com.example.identity_service.controller;
 
 import com.example.identity_service.dto.request.ApiResponse;
 import com.example.identity_service.dto.request.AuthenticationRequest;
+import com.example.identity_service.dto.request.IntrospectRequest;
 import com.example.identity_service.dto.response.AuthenticationResponse;
+import com.example.identity_service.dto.response.IntrospectResponse;
 import com.example.identity_service.service.AuthenticationService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -19,11 +21,19 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthenticationController {
     AuthenticationService authenticationService;
 
-    @PostMapping("/log-in")
+    @PostMapping("/token")
     public ApiResponse<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
-        boolean result = authenticationService.authenticate(request);
+        AuthenticationResponse result = authenticationService.authenticate(request);
         return ApiResponse.<AuthenticationResponse>builder()
-                .result(AuthenticationResponse.builder().authenticated(result).build())
+                .result(result)
+                .build();
+    }
+
+    @PostMapping("/introspect")
+    public ApiResponse<IntrospectResponse> authenticate(@RequestBody IntrospectRequest request) {
+        IntrospectResponse result = authenticationService.introspect(request);
+        return ApiResponse.<IntrospectResponse>builder()
+                .result(result)
                 .build();
     }
 }
