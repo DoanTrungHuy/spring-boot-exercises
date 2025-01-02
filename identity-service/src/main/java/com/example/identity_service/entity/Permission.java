@@ -13,15 +13,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User {
+public class Permission {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
-    String username;
-    String password;
-    String firstName;
-    String lastName;
-    LocalDate dob;
-    @ManyToMany
-    Set<Role> roles;
+    String name;
+    String decription;
 }

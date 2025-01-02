@@ -105,11 +105,11 @@ public class AuthenticationService {
 
     private String buildScope(User user) {
         StringJoiner stringJoiner = new StringJoiner(" ");
-        if (!user.getRoles().isEmpty()) {
-            for (String s : user.getRoles()) {
-                stringJoiner.add(s);
-            }
-        }
+//        if (!user.getRoles().isEmpty()) {
+//            for (String s : user.getRoles()) {
+//                stringJoiner.add(s);
+//            }
+//        }
         return stringJoiner.toString();
     }
 }
