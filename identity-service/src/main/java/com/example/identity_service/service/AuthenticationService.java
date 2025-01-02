@@ -4,6 +4,8 @@ import com.example.identity_service.dto.request.AuthenticationRequest;
 import com.example.identity_service.dto.request.IntrospectRequest;
 import com.example.identity_service.dto.response.AuthenticationResponse;
 import com.example.identity_service.dto.response.IntrospectResponse;
+import com.example.identity_service.entity.Permission;
+import com.example.identity_service.entity.Role;
 import com.example.identity_service.entity.User;
 import com.example.identity_service.exception.AppException;
 import com.example.identity_service.exception.ErrorCode;
@@ -105,11 +107,14 @@ public class AuthenticationService {
 
     private String buildScope(User user) {
         StringJoiner stringJoiner = new StringJoiner(" ");
-//        if (!user.getRoles().isEmpty()) {
-//            for (String s : user.getRoles()) {
-//                stringJoiner.add(s);
-//            }
-//        }
+        if (!user.getRoles().isEmpty()) {
+            for (Role s : user.getRoles()) {
+                stringJoiner.add("ROLE_" + s.getName());
+                for (Permission p : s.getPermissions()) {
+                    stringJoiner.add(p.getName());
+                }
+            }
+        }
         return stringJoiner.toString();
     }
 }
