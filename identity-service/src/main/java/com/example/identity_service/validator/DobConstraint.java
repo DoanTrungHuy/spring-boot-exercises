@@ -8,9 +8,9 @@ import java.lang.annotation.*;
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(
-        validatedBy = {}
+        validatedBy = {DobValidator.class}
 )
-public @interface DobConstrant {
+public @interface DobConstraint {
     String message() default "Invalid Date of Birth";
 
     Class<?>[] groups() default {};
