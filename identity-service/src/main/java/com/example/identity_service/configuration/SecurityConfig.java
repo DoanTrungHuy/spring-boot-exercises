@@ -25,7 +25,7 @@ import javax.crypto.spec.SecretKeySpec;
 @EnableWebSecurity
 public class SecurityConfig {
     private final String[] PUBLIC_ENDPOINTS = {
-            "/users", "/auth/token", "auth/introspect", "/auth/logout"
+            "/users", "/auth/token", "auth/introspect", "/auth/logout", "/auth/refresh"
     };
 
     @Autowired
@@ -40,6 +40,7 @@ public class SecurityConfig {
         });
 
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
+
         httpSecurity.oauth2ResourceServer(
                 oauth2 ->  {
                     oauth2.jwt(jwtConfigurer -> {
