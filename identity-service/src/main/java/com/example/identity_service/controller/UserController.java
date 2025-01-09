@@ -5,6 +5,7 @@ import com.example.identity_service.dto.request.UserCreationRequest;
 import com.example.identity_service.dto.request.UserUpdateRequest;
 import com.example.identity_service.dto.response.UserResponse;
 import com.example.identity_service.entity.User;
+import com.example.identity_service.exception.ErrorCode;
 import com.example.identity_service.service.UserService;
 import jakarta.validation.Valid;
 import lombok.AccessLevel;
@@ -27,8 +28,8 @@ public class UserController {
 
     @PostMapping()
     public ApiResponse<UserResponse> createUser(@RequestBody @Valid UserCreationRequest request) {
+        log.info("Controller: Create User");
         ApiResponse<UserResponse> apiResponse = new ApiResponse<>();
-        apiResponse.setCode(HttpStatus.CREATED.value());
         apiResponse.setMessage("Created successfully");
         apiResponse.setResult(userService.createUser(request));
         return apiResponse;
